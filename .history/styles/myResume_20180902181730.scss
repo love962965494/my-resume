@@ -42,7 +42,6 @@ ul {
 }
 
 /* ----------------------------- 左边栏 ----------------------------- */
-
 .content__left {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -105,7 +104,6 @@ ul {
 }
 
 /* ----------------------------- 右边栏 ----------------------------- */
-
 .content__right {
   padding: 15px;
   @mixin header {
@@ -137,98 +135,23 @@ ul {
     &>.header {
       @include header;
     }
-    &>.list {
+
+    & > .list {
       padding: 0;
-      &>li {
-        margin: 10px 2rem;
-        &>.company {
+
+      & > li {
+        & > .company {
           display: flex;
           margin-bottom: 15px;
           align-items: center;
           img {
             width: 80px;
-            margin-right: 1rem;
-            margin-left: -1.5rem;
+            margin-right: 15px;
           }
+
           span {
             color: #425cf0;
             font-weight: 600;
-            font-size: 18px;
-            white-space: nowrap;
-          }
-        }
-        &>.work-experience-list {
-          padding: 0;
-          position: relative;
-          &::before {
-            content: '';
-            position: absolute;
-            height: calc(100% - 10px);
-            margin-left: -1rem;
-            margin-top: 10px;
-            border-left: 2px solid #1fb5e6;
-          }
-          .work__item {
-            margin: 10px 0;
-            &--name {
-              font-weight: 600;
-              &::before {
-                content: '';
-                position: absolute;
-                width: 10px;
-                height: 10px;
-                margin-left: calc(-4px - 1rem);
-                margin-top: .4rem;
-                border-radius: 50%;
-                background: #1fb5e6;
-              }
-            }
-            &--info {
-              &>p {
-                text-align: justify;
-              }
-            }
-            &--picture {
-              img {
-                width: 250px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  &--skill {
-    &>.header {
-      @include header;
-    }
-
-    & > .list {
-      padding: 0 2rem;
-      position: relative;
-      &::before {
-        content: '';
-        position: absolute;
-        height: calc(100% - 5px);
-        margin-left: -1rem;
-        margin-top: 5px;
-        border-left: 2px solid #1fb5e6;
-      }
-
-      .list__item {
-        margin: 10px 0;
-        &--name {
-          font-weight: 600;
-          line-height: 1.2rem;
-          &::before {
-            content: '';
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            margin-left: calc(-4px - 1rem);
-            margin-top: .3rem;
-            border-radius: 50%;
-            background: #1fb5e6;
           }
         }
       }

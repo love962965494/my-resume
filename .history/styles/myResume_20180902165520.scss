@@ -1,0 +1,20 @@
+@mixin text-center {
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  padding: 15px;
+}
+
+.content__left {
+  background-color: #0daeee;
+  color: #fff;
+}

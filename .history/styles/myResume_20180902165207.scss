@@ -1,0 +1,14 @@
+@mixin text-center {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  padding: 15px;
+}
+
+.content__left {
+  background-color: #0daeee;
+  color: #fff;
+}

@@ -219,14 +219,12 @@ ul {
         margin: 10px 0;
         &--name {
           font-weight: 600;
-          line-height: 1.2rem;
           &::before {
             content: '';
             position: absolute;
             width: 10px;
             height: 10px;
             margin-left: calc(-4px - 1rem);
-            margin-top: .3rem;
             border-radius: 50%;
             background: #1fb5e6;
           }
