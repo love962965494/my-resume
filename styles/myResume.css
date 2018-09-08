@@ -230,6 +230,7 @@ ul {
 
 .content__right--experience > .list > li > .work-experience-list .work__item--picture img {
   width: 250px;
+  margin-right: 15px;
 }
 
 .content__right--skill > .header {
