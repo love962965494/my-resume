@@ -168,7 +168,7 @@ ul {
   margin: 10px 2rem;
 }
 
-.content__right--experience > .list > li > .company {
+.content__right--experience > .list > li > .work-type {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,13 +178,13 @@ ul {
           align-items: center;
 }
 
-.content__right--experience > .list > li > .company img {
+.content__right--experience > .list > li > .work-type img {
   width: 80px;
   margin-right: 1rem;
   margin-left: -1.5rem;
 }
 
-.content__right--experience > .list > li > .company span {
+.content__right--experience > .list > li > .work-type span {
   color: #425cf0;
   font-weight: 600;
   font-size: 18px;
@@ -231,6 +231,12 @@ ul {
 .content__right--experience > .list > li > .work-experience-list .work__item--picture img {
   width: 250px;
   margin-right: 15px;
+}
+
+.content__right--experience > .list > li > .self img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
 }
 
 .content__right--skill > .header {
